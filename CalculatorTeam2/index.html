@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+<div align="center">
+<div class="calculate" id = "body">
+    <span class="calculate__title">My calculate</span>
+
+    <div class="calculate__header display">
+        <div class="display__input">
+            <input id="inputFirst"  value="0"></input>
+        </div>
+    </div>
+
+    <div class="calculate__body">
+
+        <div class="number-pad">
+
+            <div class="number-pad__left">
+                <div class="numbers-buttons">
+                    <div class="numbers-buttons__first number-buttons-first">
+                        <div class="number-buttons-first__7">
+                            <button class="buttons" id="seven" data-type="7">7</button>
+                        </div>
+                        <div class="number-buttons-first__4">
+                            <button class="buttons" id ="four" data-type="4">4</button>
+                        </div>
+                        <div class="number-buttons-first__1">
+                            <button class="buttons" id="one" data-type="1">1</button>
+                        </div>
+                        <div class="number-buttons-first__0">
+                            <button class="buttons" id ="zero" data-type="0">0</button>
+                        </div>
+                    </div>
+                    <div class="number-buttons-second">
+                        <div class="numbers-buttons__8">
+                            <button class="buttons" id ="eight" data-type="8">8</button>
+                        </div>
+                        <div class="numbers-buttons__5">
+                            <button class="buttons" id ="five" data-type="5">5</button>
+                        </div>
+                        <div class="numbers-buttons__2">
+                            <button class="buttons" id ="two" data-type="2">2</button>
+                        </div>
+                        <div class="numbers-buttons__dot">
+                            <button class="buttons" id ="dot" data-type=".">.</button>
+                        </div>
+                    </div>
+                    <div class="number-buttons-third">
+                        <div class="numbers-buttons__9">
+                            <button class="buttons" id ="nine" data-type="9">9</button>
+                        </div>
+                        <div class="numbers-buttons__6">
+                            <button class="buttons" id ="six" data-type="6">6</button>
+                        </div>
+                        <div class="numbers-buttons__3">
+                            <button class="buttons" id ="three" data-type="3">3</button>
+                        </div>
+                        <div class="numbers-buttons__equal">
+                            <button class="buttons" id ="equal" data-type="1">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="number-pad__right">
+                <div class="operations-buttons">
+                    <div class="operations-buttons__divide">
+                        <button class="buttons" id ="divide" data-type="doDivide">/</button>
+                    </div>
+                    <div class="operations-buttons__multi">
+                        <button class="buttons" id ="multi" data-type="doMulti">*</button>
+                    </div>
+                    <div class="operations-buttons__minus">
+                        <button class="buttons" id ="minus" data-type="doMinus">-</button>
+                    </div>
+                    <div class="operations-buttons__plus">
+                        <button class="buttons" id ="plus" data-type="doPlus">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="calculate__footer clear">
+
+        <div class="clear__clean">
+            <button class="buttons" id ="reset">C</button>
+        </div>
+        <div class="clear__clean">
+            <button class="buttons" id ="del">CE</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="init.js"></script>
+</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 1360px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    border: yellow;
+
+}
+.string{
+    display: flex;
+    flex-direction: row;
+    width: 1360px;
+    height: 50px;
+    border: red;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+    width: 1360px;
+    height: 400px;
+    background: black;
+}
+.title{
+    width: 340px;
+    height: 50px;
+    background:black;
+    border: 3px solid yellow;
+    font-size: 38px;
+    text-align: center;
+    color: yellow;
+}
+.data{
+    width: 340px;
+    height: 50px;
+    background:black;
+    border: 3px solid yellow;
+    font-size: 26px;
+    text-align: center;
+    color: yellow;
+}
+.button{
+    width: 340px;
+    height: 50px;
+    background:black;
+    border: 3px solid yellow;
+    font-size: 48px;
+    text-align: center;
+    color: yellow;
+}
+.button:hover{
+    background: black;
+    font-size: 48px;
+    color: #dfdf00;
+    background: #181818;
+    border: 5px solid #dfdf00;
+
+}
+.button:active {
+    width: 342px;
+    height: 51px;
+    color: #9f9f00;
+    background: #313131;
+    border: 5px #9f9f00;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 1360px;
+    height: 200px;
+    background: black;
+}
+.inputText{
+    width: 1360px;
+    height: 70px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 46px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    background: yellow;
+    border: 6px solid yellow;
+}
