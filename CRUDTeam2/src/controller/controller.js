@@ -154,8 +154,7 @@ Controller.prototype.init = function () {
         }.bind(this),
         false);
     save.addEventListener('click', function () {
-            this.saveLS();
-            this.saveToDB();
+this.saveLS();
         }.bind(this),
         false);
     restore.addEventListener('click', function () {
@@ -165,22 +164,7 @@ Controller.prototype.init = function () {
         false);
 
 };
-Controller.prototype.saveToDB = function () {
-    const request = new XMLHttpRequest();
 
-    function reqReadyStateChange() {
-        if (request.readyState == 4 && request.status == 200)
-            document.getElementById("output").innerHTML = request.responseText;
-    }
-    const arrayOfPerson = this.model.getArrayOfPerson();
-    for (let i = 0; i < arrayOfPerson.length; i++) {
-        request.open("POST", "http://localhost:3000/writetodb");
-        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        request.onreadystatechange = reqReadyStateChange;
-        console.log(' arrayOfPerson[i]= '+arrayOfPerson[i].firstName);
-        request.send(arrayOfPerson[i]);
-    }
-};
 Controller.prototype.saveLS = function () {
     localStorage.setItem(this.idLS, this.model.id);
     let arrayString = this.logic.objectToString(this.model.getArrayOfPerson());
